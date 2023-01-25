@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+
+        <!--font selection-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Vollkorn:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!--linking CSS to HTML-->
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+               
+                <ul>
+                    <li>
+                        <a href="index.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Our mission</a>
+                    </li>
+                    <li>
+                        <a href="index.html">The science</a>
+                    </li>
+                </ul>     
+
+                <span id="logo">MediCure</span>
+                
+                <div class="search-container">
+                    <form action="/search">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button></form>
+                </div>
+
+                <div class="account-icon">
+                    <a href="Survey.html"><img src="images/user-icon.svg" alt=""></a>  
+                </div>
+            </nav>
+           
+<!--End of desktop navigation menu-->
+            
+            <div class="hero-section">
+
+            <div>
+                <label>Select diet preferences: </label>
+                <select id="dietSelectionValue" multiple>
+                    <option value="balanced">Balanced</option>
+                    <option value="high-fiber">High-fiber</option>
+                    <option value="high-protein">High-protein</option>
+                    <option value="low-carb">Low-carb</option>
+                    <option value="low-fat">Low-fat</option>
+                    <option value="low-sodium">Low-sodium</option>
+                </select>
+
+                <div style="margin-top: 40px;"></div>
+
+                <label>Select diet restrictions: </label>
+                <select id="healthSelectionValue" multiple>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="keto">Keto</option>
+                    <option value="gluten-free">Gluten-free</option>
+                    <option value="dairy-free">Dairy-free</option>
+                    <option value="peanut-free">Peanut-free</option>
+                </select>
+
+                <div style="margin-top: 40px;"></div>
+
+            
+                <label>Select cuisine preferences: </label>
+                <select id="cuisineSelectionValue" multiple>
+                    <option value="American">American</option>
+                    <option value="Asian">Asian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="South-American">South-American</option>
+                </select>
+
+                <div style="margin-top: 60px;"></div>
+                <button type ="button" id="Submit" onclick="myFunction(dietSelectionValue,healthSelectionValue, cuisineSelectionValue)">Submit</button>
+
+            <div>     
+        </div>
+    </header>
+
+<!--End of hero section-->
+<!--End of header section-->
+
+   
+
+    <footer>
+        <div class="wrapper">
+         
+          <div class="links-container">
+            
+                <div class="left">
+                    <span id="logo">MediCure</span>
+                </div>
+                
+                <div class="middle">
+                    <ul>
+                        <li>
+                           <a href="#">About us</a> 
+                        </li>
+                        <li>
+                            <a href="#">Our mission</a> 
+                         </li>
+                         <li>
+                            <a href="#">The science</a> 
+                         </li>
+                         <li>
+                            <a href="#">Terms and conditions</a> 
+                         </li>
+                         <li>
+                            <a href="#">Privacy policy</a> 
+                         </li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <h5>Contact us</h5>
+                        <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                <img src="images/instagram_icon.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="images/twitter-icon.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="images/facebook-icon.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="subscribe">
+                            <form action="#">
+                            <input type="text" placeholder="Email address">
+                            <button class="submit-btn">Subscribe</button>
+                            </form>
+                        </div>
+                </div>
+         </div>  
+
+        <p class="copyright">© 2023 MediCure All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <!--linking JS to HTML-->
+    <script src="main.js"></script>
+
+</body>
+</html>

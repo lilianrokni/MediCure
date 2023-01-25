@@ -1,0 +1,391 @@
+/* adding colour */
+:root {
+    --yellow-colour: #EFC573;
+    --green-colour: #374234;
+    --white-colour: #F6F0E5;
+    --black-colour: #000000;
+}
+
+*,
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Vollkorn", sans-serif;
+  }
+
+header {
+    width: 100%;
+    height: 590px;
+    background: url(images/hero-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+#logo {
+    font-family: 'Oleo Script', sans-serif;
+    position: center;
+    width: 150px;
+    height: 46px;
+
+    font-family: 'Oleo Script', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #374234; 
+  }
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+/* search bar */
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .search-container input[type=text] {
+    font-family: "Poppins", sans-serif;
+    padding: 6px;
+    margin-left: 8px;
+    font-size: 16px;
+    border: #000000;
+    border-radius: 8px;
+    width: 100%;
+    color: #000000;
+  }
+  
+  .search-container button {
+    padding: 6px 10px;
+    margin-left: 8px;
+    background: #ddd;
+    font-size: 12px;
+    border: #374234;
+    cursor: pointer;
+  }
+
+/* button */  
+.btn {
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #374234;
+    display: inline block;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn.light {
+    background: var(--white-colour)
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1024px;
+    top: 0;
+    padding: 36px 0;
+    z-index: 100;
+    transition: all 500ms ease;
+  }
+
+nav.scrolled {
+    background: var(--white-colour);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    top: 0;
+    padding: 12px;
+  }
+
+nav .logo {
+    font-family: "Oleo Script", sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    color: #374234;
+    margin-left: 0px;
+  }
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+/* Hero Section*/
+
+.hero-section {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+
+  .hero-section .hero-text h1 {
+    position: relative;
+    width: 206px;
+    height: 25px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;  
+    color: #374234;   
+    backdrop-filter: blur(2px); 
+  }
+
+  .hero-section .hero-text p {
+    position: relative;
+    width: 297px;
+    height: 145px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #374234;
+    backdrop-filter: blur(2px);
+  }
+
+/* Preferences Section*/
+
+section .preferences-section {
+    margin-top: 0px;
+}
+
+.preferences-section .preferences-text h1 {
+    position: relative;
+    width: 1024px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;   
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center; 
+    color: #374234; 
+}
+
+.preferences-section .preferences-text img {
+    position: relative;
+    width: 864px;
+    height: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 1.5px solid #EFC573;
+}
+
+.preferences-section .preferences-text p {
+    position: relative;
+    width: 1024px;
+    height: 60px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #374234;
+}
+
+.preferences-section .preferences-text h4 {
+    position: relative;
+    width: 1024px;
+    height: 60px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 3px;
+    text-align: center;
+    color: #374234;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Page Break Section*/
+
+.section .page-break {
+    margin-top: 71px;
+}
+
+.page-break {
+    width: 100%;
+    height: 220px;
+    background: url(images/survey-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* How-to Section*/
+
+.how-to {
+    margin-top: 0px;
+}
+
+.how-to-title h1 {
+    position: relative;
+    width: 1024px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;   
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center; 
+    color: #374234; 
+}
+
+.how-to-title img {
+    position: relative;
+    width: 864px;
+    height: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 1.5px solid #EFC573;
+}
+
+.image-container-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+
+footer {
+    background: var(--yellow-colour);
+    color: #374234;
+    margin-top: 71px;
+    padding: 70px 0;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #374234;   
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: 16px 0;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #374234;
+
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .copyright {
+    position: absolute;
+    width: 326px;
+    height: 24px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #63512D;
+
+}
+
+footer .right h5 {
+    margin: 0px 0;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #374234;
+}
+
+footer .right .social {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer form {
+    margin-left: 0px;
+    margin-top: 0px;
+    position: relative
+}
+
+footer form input {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 160px 8px 32px;
+    border: none;
+    width: 100%;
+    color: #000000;
+  }
+  
+  footer form .submit-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(#374234);
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #63512D;
+    cursor: pointer;
+  }
